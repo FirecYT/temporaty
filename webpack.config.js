@@ -2,6 +2,20 @@ const path = require('path');
 const ESLintPlugin = require('eslint-webpack-plugin');
 
 module.exports = {
+	stats: {
+		hash: false,
+		version: false,
+		timings: false,
+		assets: false,
+		chunks: false,
+		modules: false,
+		children: false,
+		source: false,
+		errors: true,
+		errorDetails: true,
+		warnings: true,
+		colors: true,
+	},
 	mode: 'development',
 	entry: './src/index.ts',
 	output: {
@@ -26,6 +40,7 @@ module.exports = {
 	},
 	plugins: [
 		new ESLintPlugin({
+			configType: "flat",
 			context: path.resolve(__dirname),
 			files: 'src/**/*.ts',
 			extensions: "ts",

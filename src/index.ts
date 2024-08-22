@@ -1,3 +1,7 @@
 'use strict';
 
-console.log('Hello, world');
+var g = 12;
+
+	console.log (
+		'Hello, world' + g) ;
+;; ;
