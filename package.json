@@ -1,0 +1,27 @@
+{
+  "name": "name_of_project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "watch": "webpack --watch --progress"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@eslint/js": "^9.9.0",
+    "@typescript-eslint/eslint-plugin": "*",
+    "@typescript-eslint/parser": "*",
+    "eslint": "^9.9.0",
+    "eslint-webpack-plugin": "*",
+    "globals": "^15.9.0",
+    "ts-loader": "*",
+    "typescript": "*",
+    "typescript-eslint": "^8.2.0",
+    "webpack": "*",
+    "webpack-cli": "*"
+  }
+}
